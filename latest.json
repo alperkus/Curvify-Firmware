@@ -1,12 +1,12 @@
 {
   "schema": 1,
   "board": "WS-S3-AMOLED206",
-  "version": "2.0.3-amoled",
+  "version": "2.0.4-amoled",
   "released": "2026-05-17",
-  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.0.3.bin",
-  "size": 814832,
-  "sha256": "69bb8da8c823dd36773bed4baad40474a6f602e051fba31303f1f1531c763d1d",
+  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.0.4.bin",
+  "size": 814880,
+  "sha256": "5027dafb0724a90bf91e077f13a22f1682eb0025d7881e1abbdecd4b81602ded",
   "min_app_version": "1.0.0",
   "min_battery_pct": 50,
-  "notes": "Power-off long-press shortened 5 s → 4 s. Faster to turn the device off from the bike without holding the button forever."
+  "notes": "Auto deep sleep after 10 min idle. Light sleep at 5 min stays (LCD off, BLE alive); 5 min later the chip drops to deep sleep (BLE off, ~µA draw). Motion or button wakes it back up."
 }
