@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "board": "WS-S3-AMOLED206",
+  "version": "2.0.3-amoled",
+  "released": "2026-05-17",
+  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.0.3.bin",
+  "size": 814832,
+  "sha256": "69bb8da8c823dd36773bed4baad40474a6f602e051fba31303f1f1531c763d1d",
+  "min_app_version": "1.0.0",
+  "min_battery_pct": 50,
+  "notes": "Power-off long-press shortened 5 s → 4 s. Faster to turn the device off from the bike without holding the button forever."
+}
