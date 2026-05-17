@@ -1,12 +1,12 @@
 {
   "schema": 1,
   "board": "WS-S3-AMOLED206",
-  "version": "2.1.0-amoled",
+  "version": "2.1.1-amoled",
   "released": "2026-05-17",
-  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.1.0.bin",
-  "size": 789888,
-  "sha256": "20ab2a304a68eea12b027eed280fbd3f3c434911ff33160c4624be2d67262657",
+  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.1.1.bin",
+  "size": 799104,
+  "sha256": "335c5586e9a1068fb36b481412210859b5a996a705e407cbc6c8d322aff07eef",
   "min_app_version": "1.0.0",
   "min_battery_pct": 50,
-  "notes": "On-device touch menu (brightness, calibrate, info, language), slide-to-power-off confirm screen, animated splash. Lean digit colors by warn zone, top-band stats split into duration/distance/speed icons, paused-ride visual, session-best PB badge, LOW BATT banner. Phone-language lock once you pick from the menu. Built on v2.0.8's deep-sleep-only power model. Reliability: touch I2C glitch debounce, battery PMU glitch guard, profile-change race fix."
+  "notes": "Device Info menu now shows a QR code of the BLE MAC — scan with any phone QR reader to grab the pairing address. Same screen adds a two-tap FORGET PHONE button that wipes NimBLE bond storage so a fresh phone can pair (first tap arms for 3 s, second tap commits, green flash confirms)."
 }
