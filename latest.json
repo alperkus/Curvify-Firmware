@@ -1,12 +1,12 @@
 {
   "schema": 1,
   "board": "WS-S3-AMOLED206",
-  "version": "2.1.2-amoled",
+  "version": "2.1.3-amoled",
   "released": "2026-05-17",
-  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.1.2.bin",
-  "size": 799312,
-  "sha256": "732fc518f7138c4ea5f1ccd57f4d68a12c66a3ee686bf3bb734710bd6276281c",
+  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.1.3.bin",
+  "size": 799440,
+  "sha256": "35f9c8cd87a8cef9fb92f68e717232f93f7f78d33f752a4e14f2b39f9a1aa17f",
   "min_app_version": "1.0.0",
   "min_battery_pct": 50,
-  "notes": "Power-off stability fix: the slide-to-power-off was failing intermittently (device looked like it shut down, then woke back up). Cause: deep sleep was starting while the BOOT button was still bouncing or held, and the EXT1 wake source triggered instantly. Fix: wait for 400 ms of continuous HIGH on the button line before sleeping, show a RELEASE BUTTON prompt during the wait, and abort the power-off if the button can't be released within 10 s instead of sleeping into a guaranteed-wake cycle."
+  "notes": "Battery life optimizations for the 400 mAh pack. Dynamic CPU frequency: 160 MHz during a ride, 80 MHz on idle / menu screens (~40% less active current). BLE TX power dropped from +3 dBm to 0 dBm (range is still plenty for a phone in your pocket). Display refresh slowed from 10 Hz to 5 Hz on fully-static screens (IDLE, MENU). Expect ~25% longer ride time and roughly double the idle standby time."
 }
