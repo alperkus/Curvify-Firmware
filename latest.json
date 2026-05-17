@@ -1,12 +1,12 @@
 {
   "schema": 1,
   "board": "WS-S3-AMOLED206",
-  "version": "2.0.7-amoled",
+  "version": "2.0.8-amoled",
   "released": "2026-05-17",
-  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.0.7.bin",
-  "size": 814880,
-  "sha256": "873b4107665df2b87552df596c6f6c57eae75d61d3c5eb64aa33baab75f456b7",
+  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.0.8.bin",
+  "size": 814112,
+  "sha256": "bd6e69f7bf37319fa0f000113daddd0ccce2b583cc887b9bb418086416351e8b",
   "min_app_version": "1.0.0",
   "min_battery_pct": 50,
-  "notes": "OTA control characteristic now also advertises WRITE_WITHOUT_RESPONSE. iOS was silently dropping the END (0x02) command because the previous firmware only declared WRITE (with response) — devices got stuck on the UPDATING screen forever. Anyone running v2.0.6 or earlier must flash this version once via USB; subsequent OTAs from v2.0.7+ work end-to-end."
+  "notes": "Power management overhaul. The previous \"light sleep\" path kept the CPU and BLE running while pretending to be off — a device left idle overnight drained the pack. Now: a single 3-second hold on the BOOT button (was 4) puts the device into real deep sleep, and after 5 minutes of no motion and no phone connection the same auto-off path fires. Wake on motion or button only — no more periodic timer wake. Screen also dims to 10% after 60 s in the idle screen (full bright in any ride/countdown/summary state); touching the AMOLED or pressing the BOOT button restores full brightness for another 60 s. Calibration and max-lean reset are now BLE-only — the BOOT button no longer triggers them, since one-function-per-gesture is less error-prone."
 }
