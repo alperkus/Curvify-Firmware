@@ -1,12 +1,12 @@
 {
   "schema": 1,
   "board": "WS-S3-AMOLED206",
-  "version": "2.0.4-amoled",
+  "version": "2.0.5-amoled",
   "released": "2026-05-17",
-  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.0.4.bin",
+  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.0.5.bin",
   "size": 814880,
-  "sha256": "5027dafb0724a90bf91e077f13a22f1682eb0025d7881e1abbdecd4b81602ded",
+  "sha256": "e382fbb4e1e86f75198b69be49564c2b1563e3d41f4eed117efc75d8b415f3eb",
   "min_app_version": "1.0.0",
   "min_battery_pct": 50,
-  "notes": "Auto deep sleep after 10 min idle. Light sleep at 5 min stays (LCD off, BLE alive); 5 min later the chip drops to deep sleep (BLE off, ~µA draw). Motion or button wakes it back up."
+  "notes": "Deep sleep waits for button release before arming wake (was auto-waking instantly). Button debounced + polled at 33 Hz so the hold-progress animation is smooth and long-press is glitch-immune. IDLE screen now reads BLE-connected state directly (was waiting for the phone's clock packet, so 'WAITING' lingered after pairing). PB chip removed from IDLE."
 }
