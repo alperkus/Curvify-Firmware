@@ -1,12 +1,12 @@
 {
   "schema": 1,
   "board": "WS-S3-AMOLED206",
-  "version": "2.0.6-amoled",
+  "version": "2.0.7-amoled",
   "released": "2026-05-17",
-  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.0.6.bin",
+  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.0.7.bin",
   "size": 814880,
-  "sha256": "bf7a2a876928f8c3fc973393479e7f883900475e8d1a83400ccdc521a1615068",
+  "sha256": "873b4107665df2b87552df596c6f6c57eae75d61d3c5eb64aa33baab75f456b7",
   "min_app_version": "1.0.0",
   "min_battery_pct": 50,
-  "notes": "OTA throughput: ATT MTU bumped 247 → 517 (max). Chunk count halves, OTA wall-clock drops accordingly. Phones negotiate down automatically if they can't support 517."
+  "notes": "OTA control characteristic now also advertises WRITE_WITHOUT_RESPONSE. iOS was silently dropping the END (0x02) command because the previous firmware only declared WRITE (with response) — devices got stuck on the UPDATING screen forever. Anyone running v2.0.6 or earlier must flash this version once via USB; subsequent OTAs from v2.0.7+ work end-to-end."
 }
