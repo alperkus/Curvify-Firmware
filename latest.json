@@ -1,12 +1,12 @@
 {
   "schema": 1,
   "board": "WS-S3-AMOLED206",
-  "version": "2.2.0-amoled",
+  "version": "2.2.1-amoled",
   "released": "2026-05-18",
-  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.2.0.bin",
-  "size": 803520,
-  "sha256": "e39f953f9e0b73adce62e7b0bd081a55358b540f67a785e596f41146fcd95292",
+  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.2.1.bin",
+  "size": 803712,
+  "sha256": "919e8004d2f153d3759e7195aef0ea8319cb158edf5af29727c4972042f0b2c8",
   "min_app_version": "1.0.0",
   "min_battery_pct": 50,
-  "notes": "BOOT button is now a menu toggle in addition to power-off. A brief tap (50-800 ms) in IDLE opens the settings menu, the same tap in MENU or any sub-page goes back, and a tap on the power-off confirm screen cancels it. The original long press (2.5 s+) still opens the power-off confirm. Riding stays untouched — short-press is ignored during the ride HUD so the menu can't pop over the cornering view by accident. Combined with the v2.1.9 bidirectional swipe, there are now two reliable ways to navigate the menu."
+  "notes": "Second physical button. The unmarked button next to the USB port (wired to GPIO 10 per the AMOLED-2.06 schematic) is now a dedicated back/menu key — short press opens the menu from IDLE, closes the menu from MENU, goes back from any sub-page, cancels the power-off confirm. Same action as a brief BOOT tap; riders can use whichever button feels natural. BOOT still owns the long-press power-off."
 }
