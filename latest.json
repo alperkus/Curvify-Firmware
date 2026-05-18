@@ -1,12 +1,12 @@
 {
   "schema": 1,
   "board": "WS-S3-AMOLED206",
-  "version": "2.1.9-amoled",
+  "version": "2.2.0-amoled",
   "released": "2026-05-18",
-  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.1.9.bin",
-  "size": 803328,
-  "sha256": "53d1bc073a1cd5ff750481c1dff718e5ad5b417e70fadcb8a18555febba601f7",
+  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.2.0.bin",
+  "size": 803520,
+  "sha256": "e39f953f9e0b73adce62e7b0bd081a55358b540f67a785e596f41146fcd95292",
   "min_app_version": "1.0.0",
   "min_battery_pct": 50,
-  "notes": "Menu navigation fix. Sub-pages (Calibrate, Info, Brightness, Language, Power Mode) now exit on either swipe direction — the footer hint arrow used to contradict the actual gesture, leaving riders stuck inside Calibrate. Swipe threshold made more sensitive (80px/600ms -> 60px/800ms). Settings menu icons enlarged ~50% (from 24px to 36px) for legibility. Row height bumped 56->64. POWER_OFF_CONFIRM also cancels on either swipe direction. Footer reads '<- KAYDIR ->' to advertise both directions."
+  "notes": "BOOT button is now a menu toggle in addition to power-off. A brief tap (50-800 ms) in IDLE opens the settings menu, the same tap in MENU or any sub-page goes back, and a tap on the power-off confirm screen cancels it. The original long press (2.5 s+) still opens the power-off confirm. Riding stays untouched — short-press is ignored during the ride HUD so the menu can't pop over the cornering view by accident. Combined with the v2.1.9 bidirectional swipe, there are now two reliable ways to navigate the menu."
 }
