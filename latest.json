@@ -1,12 +1,12 @@
 {
   "schema": 1,
   "board": "WS-S3-AMOLED206",
-  "version": "2.1.5-amoled",
+  "version": "2.1.6-amoled",
   "released": "2026-05-18",
-  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.1.5.bin",
-  "size": 801808,
-  "sha256": "be0dda06e8f7ec4e4a40e38f92ccc021319b55e0658145a144c68ed177739b13",
+  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.1.6.bin",
+  "size": 801824,
+  "sha256": "ff8d59936f13827e73c2b081bf3f3811c3521b6fe25403f83d144776752e28f3",
   "min_app_version": "1.0.0",
   "min_battery_pct": 50,
-  "notes": "Power Mode menu (MENU > GUC MODU): NORMAL (default, AMOLED 70%, screen blanks to alive indicator after timeout in RIDING) or PERFORMANCE (full bright, always on). User-picked screen timeout: 15s / 30s / 1m / 2m (default 30s). IDLE fully blanks after timeout, touch wakes. Hard lean (>=20°) brings HUD back during dimmed RIDING, releases below 18° dims again. Battery warnings while dimmed: <=30% one-shot orange BATT% for 3s, <=20% red flash every 60s, <=5% full-screen red CHARGE NOW takeover. AXP2101 healthy cutoff raised to 3100 mV to protect the cell from damage-zone discharge."
+  "notes": "USB charging now keeps the device awake. Plug it in: the screen stays on and dims/blanks per your power-mode settings, but no auto-off after 5 min as before. The charger (AXP2101) was always topping up regardless, but the chip would deep-sleep and you'd see a fresh splash on unplug — confusing. Now the same charge cable behaves the way you'd expect: device available the whole time you're charging."
 }
