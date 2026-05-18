@@ -1,12 +1,12 @@
 {
   "schema": 1,
   "board": "WS-S3-AMOLED206",
-  "version": "2.2.1-amoled",
+  "version": "2.2.2-amoled",
   "released": "2026-05-18",
-  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.2.1.bin",
-  "size": 803712,
-  "sha256": "919e8004d2f153d3759e7195aef0ea8319cb158edf5af29727c4972042f0b2c8",
+  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.2.2.bin",
+  "size": 803728,
+  "sha256": "9d4c6904f81438ce4fa39a192f31622627baeec9918506656a0ebaaf3592b447",
   "min_app_version": "1.0.0",
   "min_battery_pct": 50,
-  "notes": "Second physical button. The unmarked button next to the USB port (wired to GPIO 10 per the AMOLED-2.06 schematic) is now a dedicated back/menu key — short press opens the menu from IDLE, closes the menu from MENU, goes back from any sub-page, cancels the power-off confirm. Same action as a brief BOOT tap; riders can use whichever button feels natural. BOOT still owns the long-press power-off."
+  "notes": "Fixes 'first long press doesn't open power-off, second one does'. The confirm screen was being entered and immediately cancelled by a stray touch gesture from the same frame. Power-off entry now clears any pending short-press flag and pending touch gesture, and the confirm screen ignores taps for the first 300 ms after opening. Also: settings menu (MENU + sub-pages) runs at 10 Hz instead of 5 Hz — taps no longer feel laggy. Button progress bar also runs at 15 Hz while held so the fill animation looks smooth."
 }
