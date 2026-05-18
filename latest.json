@@ -1,12 +1,12 @@
 {
   "schema": 1,
   "board": "WS-S3-AMOLED206",
-  "version": "2.1.7-amoled",
+  "version": "2.1.8-amoled",
   "released": "2026-05-18",
-  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.1.7.bin",
-  "size": 801648,
-  "sha256": "07c9012d6df2fc368cd22811e746beab158bce56ae80c3e257f83888ade354d7",
+  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.1.8.bin",
+  "size": 803232,
+  "sha256": "974f258c3f3e8d781e946b12aa5bf167fcbd4abdba70afe007437ec91d91b9b8",
   "min_app_version": "1.0.0",
   "min_battery_pct": 50,
-  "notes": "Power-off UX fixes. Slide-to-confirm replaced with a big red tap-on-icon — slide hit-tests were dropping when the swipe didn't quite reach the right edge, making shutdown feel unreliable. Tap is deterministic. BOOT button hold threshold lowered 3 s -> 2.5 s so the perceived 'press 3 seconds' lands inside the window without debounce/render-latency padding. Holding the button now also forces the screen awake during the press, so the bottom progress bar is visible even when starting from a fully-blanked IDLE."
+  "notes": "Visual polish. Post-flash splash is now a green ring scale-in + animated white checkmark + UPDATED label with version, replacing the old rotating gear. Settings menu (MENU) rows redesigned as iOS-style cards with primitive-drawn icons (sun / target / info / speech bubble / power glyph), the current value of each setting on the right (70% / TR / NORM / etc), and a chevron to advertise tap-to-enter. Reads as a settings list instead of a row of pills."
 }
