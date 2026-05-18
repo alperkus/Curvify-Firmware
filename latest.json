@@ -1,12 +1,12 @@
 {
   "schema": 1,
   "board": "WS-S3-AMOLED206",
-  "version": "2.1.8-amoled",
+  "version": "2.1.9-amoled",
   "released": "2026-05-18",
-  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.1.8.bin",
-  "size": 803232,
-  "sha256": "974f258c3f3e8d781e946b12aa5bf167fcbd4abdba70afe007437ec91d91b9b8",
+  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.1.9.bin",
+  "size": 803328,
+  "sha256": "53d1bc073a1cd5ff750481c1dff718e5ad5b417e70fadcb8a18555febba601f7",
   "min_app_version": "1.0.0",
   "min_battery_pct": 50,
-  "notes": "Visual polish. Post-flash splash is now a green ring scale-in + animated white checkmark + UPDATED label with version, replacing the old rotating gear. Settings menu (MENU) rows redesigned as iOS-style cards with primitive-drawn icons (sun / target / info / speech bubble / power glyph), the current value of each setting on the right (70% / TR / NORM / etc), and a chevron to advertise tap-to-enter. Reads as a settings list instead of a row of pills."
+  "notes": "Menu navigation fix. Sub-pages (Calibrate, Info, Brightness, Language, Power Mode) now exit on either swipe direction — the footer hint arrow used to contradict the actual gesture, leaving riders stuck inside Calibrate. Swipe threshold made more sensitive (80px/600ms -> 60px/800ms). Settings menu icons enlarged ~50% (from 24px to 36px) for legibility. Row height bumped 56->64. POWER_OFF_CONFIRM also cancels on either swipe direction. Footer reads '<- KAYDIR ->' to advertise both directions."
 }
