@@ -1,12 +1,12 @@
 {
   "schema": 1,
   "board": "WS-S3-AMOLED206",
-  "version": "2.2.6-amoled",
+  "version": "2.2.7-amoled",
   "released": "2026-05-19",
-  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.2.6.bin",
+  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.2.7.bin",
   "size": 803712,
-  "sha256": "0ba10df87a3bd2c3a43e0f2746cb6fe6a7c6cf6630594d30f49d4fda623cbe28",
+  "sha256": "1afcd07c78c136859fa81efdf083112b37781bc5f9a33b6e7ab26df47b95f6a0",
   "min_app_version": "1.0.0",
   "min_battery_pct": 50,
-  "notes": "Top-band stats no longer clip past the screen edges. Column centres moved in from 70 px to 100 px from each edge, and the duration display drops seconds past one hour (H:MM instead of HH:MM:SS) so the leftmost column stays compact regardless of ride length."
+  "notes": "BLE TX power back to 0 dBm. The v2.2.3 bump to +3 dBm was on the theory the mid-ride drop-out was a range issue — turned out to be iOS suspending the app and stopping the writes. Range never had a real problem. Back to 0 dBm for the ~3-5 mA notify-path saving. If field tests turn up an actual range issue, easy to revert."
 }
