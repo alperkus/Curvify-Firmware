@@ -1,12 +1,12 @@
 {
   "schema": 1,
   "board": "WS-S3-AMOLED206",
-  "version": "2.2.3-amoled",
+  "version": "2.2.4-amoled",
   "released": "2026-05-19",
-  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.2.3.bin",
+  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.2.4.bin",
   "size": 803728,
-  "sha256": "98b9909ac6353cf688899e58170bcc9c635f305ca9b05772163a5c752af10a7b",
+  "sha256": "70a36e04f3c71518214acfc44b2a4d4b8b5c91f2ead4c6ef779768a7cbf42979",
   "min_app_version": "1.0.0",
   "min_battery_pct": 50,
-  "notes": "BLE TX power back to +3 dBm (~10 m range). v2.1.3 had dropped it to 0 dBm (~8 m) for ~3-5 mA savings, but a rider reported edge-of-range dropouts in real-world use (jacket pocket vs tank bag distance). Range margin trumps the marginal current draw."
+  "notes": "Ride freshness window 5 s -> 10 s. The phone writes a ride packet every 3 s, so the device used to fall back to IDLE after a single dropped packet. 10 s lets it ride out a brief BLE shadow / phone hiccup (~3 missed packets) before declaring 'phone gone'. Pairs with the matching iOS-side fix that keeps writes flowing while the phone screen is locked."
 }
