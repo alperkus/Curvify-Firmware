@@ -1,12 +1,12 @@
 {
   "schema": 1,
   "board": "WS-S3-AMOLED206",
-  "version": "2.2.4-amoled",
+  "version": "2.2.5-amoled",
   "released": "2026-05-19",
-  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.2.4.bin",
+  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.2.5.bin",
   "size": 803728,
-  "sha256": "70a36e04f3c71518214acfc44b2a4d4b8b5c91f2ead4c6ef779768a7cbf42979",
+  "sha256": "51351c8dc0e5b5bc7f9ee2c06eed4ed9e702a7337cf934d990941fb322750541",
   "min_app_version": "1.0.0",
   "min_battery_pct": 50,
-  "notes": "Ride freshness window 5 s -> 10 s. The phone writes a ride packet every 3 s, so the device used to fall back to IDLE after a single dropped packet. 10 s lets it ride out a brief BLE shadow / phone hiccup (~3 missed packets) before declaring 'phone gone'. Pairs with the matching iOS-side fix that keeps writes flowing while the phone screen is locked."
+  "notes": "Ride freshness window 10s -> 30s. Riders reported the device still falling back to IDLE during a brief phone-screen-lock even after the v2.2.4 widening, meaning the phone goes silent for longer than expected when backgrounded. 30 s tolerates that gap so the HUD stays usable while the iOS-side BLE-in-background path is fully sorted. Trade-off: when the rider really parks and walks away, the device holds RIDING for up to 30 s before transitioning to SUMMARY → IDLE — acceptable for now."
 }
