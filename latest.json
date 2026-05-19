@@ -1,12 +1,12 @@
 {
   "schema": 1,
   "board": "WS-S3-AMOLED206",
-  "version": "2.2.5-amoled",
+  "version": "2.2.6-amoled",
   "released": "2026-05-19",
-  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.2.5.bin",
-  "size": 803728,
-  "sha256": "51351c8dc0e5b5bc7f9ee2c06eed4ed9e702a7337cf934d990941fb322750541",
+  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.2.6.bin",
+  "size": 803712,
+  "sha256": "0ba10df87a3bd2c3a43e0f2746cb6fe6a7c6cf6630594d30f49d4fda623cbe28",
   "min_app_version": "1.0.0",
   "min_battery_pct": 50,
-  "notes": "Ride freshness window 10s -> 30s. Riders reported the device still falling back to IDLE during a brief phone-screen-lock even after the v2.2.4 widening, meaning the phone goes silent for longer than expected when backgrounded. 30 s tolerates that gap so the HUD stays usable while the iOS-side BLE-in-background path is fully sorted. Trade-off: when the rider really parks and walks away, the device holds RIDING for up to 30 s before transitioning to SUMMARY → IDLE — acceptable for now."
+  "notes": "Top-band stats no longer clip past the screen edges. Column centres moved in from 70 px to 100 px from each edge, and the duration display drops seconds past one hour (H:MM instead of HH:MM:SS) so the leftmost column stays compact regardless of ride length."
 }
