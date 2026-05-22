@@ -1,12 +1,12 @@
 {
   "schema": 1,
   "board": "WS-S3-AMOLED206",
-  "version": "2.3.1-amoled",
+  "version": "2.3.2-amoled",
   "released": "2026-05-22",
-  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.3.1.bin",
-  "size": 806592,
-  "sha256": "f8ef19529f7dbc0c58924912d30f423241d21a572cf70c6dc9d28014dd4af8ba",
+  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.3.2.bin",
+  "size": 804400,
+  "sha256": "668a2fed27cebdfdec6faa03293b05373bc1474991a173bad99194ef9b39ae85",
   "min_app_version": "1.0.0",
   "min_battery_pct": 50,
-  "notes": "Hotfix on top of 2.3.0: the device now actually powers off instead of rebooting. NimBLEDevice::deinit was racing the BLE / battery tasks during sleep entry — they're now suspended first."
+  "notes": "Hotfix on top of 2.3.1: power-off no longer reboots the device. The 2.3.0/2.3.1 deinit path tripped a NimBLE heap assertion (delete on static callback pointer) — removed the deinit call entirely, esp_deep_sleep_start does the right thing."
 }
