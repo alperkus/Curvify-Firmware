@@ -1,12 +1,12 @@
 {
   "schema": 1,
   "board": "WS-S3-AMOLED206",
-  "version": "2.3.0-amoled",
+  "version": "2.3.1-amoled",
   "released": "2026-05-22",
-  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.3.0.bin",
-  "size": 806528,
-  "sha256": "fadd6fc785ca75cd8324d4174db2a3d9153bb38bdbf49669a03142671ec9d609",
+  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.3.1.bin",
+  "size": 806592,
+  "sha256": "f8ef19529f7dbc0c58924912d30f423241d21a572cf70c6dc9d28014dd4af8ba",
   "min_app_version": "1.0.0",
   "min_battery_pct": 50,
-  "notes": "Deep sleep current drops from ~25 mA to <1 mA — the AMOLED panel and touch IC are now actually powered down when the device is off."
+  "notes": "Hotfix on top of 2.3.0: the device now actually powers off instead of rebooting. NimBLEDevice::deinit was racing the BLE / battery tasks during sleep entry — they're now suspended first."
 }
