@@ -1,12 +1,12 @@
 {
   "schema": 1,
   "board": "WS-S3-AMOLED206",
-  "version": "2.3.4-amoled",
-  "released": "2026-05-23",
-  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.3.4.bin",
-  "size": 806016,
-  "sha256": "51345a2aa62acbf360486f2292b9db23eb0274978700123e5b1e21de3b97aaee",
+  "version": "2.3.3-amoled",
+  "released": "2026-05-22",
+  "url": "https://raw.githubusercontent.com/alperkus/Curvify-Firmware/main/releases/curvify_sensor_amoled_v2.3.3.bin",
+  "size": 804432,
+  "sha256": "afa170acc3d3efa58a14ea21bd0150a9417e83c57be3895f66aec734e3ac69d5",
   "min_app_version": "1.0.0",
   "min_battery_pct": 50,
-  "notes": "Sleep-power diagnostic build. Boots dump every AXP2101 rail's enable + voltage, and the IMU is now in full sleep (~5 µA) instead of accel-only WoM mode since this board does not expose the IMU INT pin. Used to find the remaining ~7 mA leak after v2.3.3's panel + ALDO3 fix."
+  "notes": "Pressing the BOOT button to wake from sleep no longer re-opens the power-off confirm screen after boot. The long wake press used to cross the 2.5 s hold threshold the instant pollButton started running."
 }
